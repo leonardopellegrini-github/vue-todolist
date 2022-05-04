@@ -9,6 +9,7 @@ const app = new Vue({
       'fare3'
     ],
     nuovo: '',
+    fatto: false
   },
 
   
@@ -26,8 +27,8 @@ const app = new Vue({
     rimuoviRiga(indice){
       this.lista.splice(indice, 1)
     }
-    
-    
+  
+
 
   }
 

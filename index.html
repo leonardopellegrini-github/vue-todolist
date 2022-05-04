@@ -21,7 +21,7 @@
 
     <div id="contenitore">
       <div  v-for="(elemento, indice) in lista" class="riga">
-        <h4>{{elemento}}</h4>
+        <h4 v-on:click="fatto = !fatto" v-bind:class="{ barrato: fatto }">{{elemento}}</h4>
         <i @click="rimuoviRiga(indice)" class="fa fa-trash" aria-hidden="true"></i>
       </div>
 

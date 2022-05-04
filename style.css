@@ -46,3 +46,7 @@ button{
 .riga ul{
   list-style: none;
 }
+
+.barrato{
+  text-decoration: line-through;
+}
