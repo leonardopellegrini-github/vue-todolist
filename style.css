@@ -1,0 +1,48 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+}
+
+#contenitore {
+  width: 50%;
+  margin: 10px auto;
+  background-color: grey;
+  color: black;
+}
+
+.riga{
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input{
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+button{
+  border-radius: 20px;
+  background-color: brown;
+  color: white;
+  padding: 5px;
+}
+
+.riga ul{
+  list-style: none;
+}

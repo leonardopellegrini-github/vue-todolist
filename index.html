@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.css' integrity='sha512-M9yHeAbo9J8KSZVvOi5PEo4WrL6LWxbS+cvh6faIEPPqHQXhxilgCSJ/L2tTqRf73GmI4+tNy8OWSsQuwXc4fw==' crossorigin='anonymous'/>
+  <title>Todo List</title>
+</head>
+<body>
+
+  <div id="app">
+
+    <header>
+      <h1>Todo List</h1>
+      <input v-model.trim="nuovo" placeholder="Scrivi qui" type="text">
+      <button @click="aggiungiNuovo" >Aggiungi alla lista</button>
+    </header>
+
+    <div id="contenitore">
+      <div v-for="elementi in lista" class="riga">
+        <h4>{{elementi}}</h4>
+        <i @click="rimuoviElemento()" class="fa fa-trash" aria-hidden="true"></i>
+      </div>
+
+    </div>
+    
+
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
