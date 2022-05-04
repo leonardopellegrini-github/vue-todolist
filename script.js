@@ -8,16 +8,27 @@ const app = new Vue({
       'fare2',
       'fare3'
     ],
-    nuovo: ''
+    nuovo: '',
   },
 
   
   methods:{
 
     aggiungiNuovo(){
+      if(this.nuovo.length > 1){
         this.lista.push(this.nuovo)
+      } else {
+        alert("non hai inserito abbastanza caratteri")
       }
       
+      },
+    
+    rimuoviRiga(indice){
+      this.lista.splice(indice, 1)
     }
+    
+    
+
+  }
 
 })

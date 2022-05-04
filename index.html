@@ -20,9 +20,9 @@
     </header>
 
     <div id="contenitore">
-      <div v-for="elementi in lista" class="riga">
-        <h4>{{elementi}}</h4>
-        <i @click="rimuoviElemento()" class="fa fa-trash" aria-hidden="true"></i>
+      <div  v-for="(elemento, indice) in lista" class="riga">
+        <h4>{{elemento}}</h4>
+        <i @click="rimuoviRiga(indice)" class="fa fa-trash" aria-hidden="true"></i>
       </div>
 
     </div>
